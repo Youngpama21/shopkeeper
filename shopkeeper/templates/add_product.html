@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Product</title>
+</head>
+<body>
+    <h1>Add Product</h1>
+    <form method="post">
+        {{ form.hidden_tag() }}
+        {{ form.product_no.label }} {{ form.product_no(size=20) }}<br>
+        {{ form.product_name.label }} {{ form.product_name(size=50) }}<br>
+        {{ form.buying_price.label }} {{ form.buying_price() }}<br>
+        {{ form.selling_price.label }} {{ form.selling_price() }}<br>
+        {{ form.submit() }}
+    </form>
+</body>
+</html>
